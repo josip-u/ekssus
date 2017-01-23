@@ -1,0 +1,11 @@
+\select@language {croatian}
+\contentsline {section}{\numberline {1}Uvod}{1}
+\contentsline {section}{\numberline {2}Ekspertno znanje}{1}
+\contentsline {section}{\numberline {3}Model ekspertnog sustava}{1}
+\contentsline {subsection}{\numberline {3.1}Unesene vrijednosti u model}{3}
+\contentsline {subsubsection}{\numberline {3.1.1}Desktop dio}{3}
+\contentsline {subsubsection}{\numberline {3.1.2}Web dio}{3}
+\contentsline {subsection}{\numberline {3.2}Korisnosti}{4}
+\contentsline {section}{\numberline {4}Proces zaklju\IeC {\v c}ivanja}{4}
+\contentsline {section}{\numberline {5}Programska podr\IeC {\v s}ka}{4}
+\contentsline {section}{\numberline {6}Zaklju\IeC {\v c}ak}{4}

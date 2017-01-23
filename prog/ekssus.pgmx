@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProbModelXML formatVersion="0.2.0">
+  <ProbNet type="InfluenceDiagram">
+    <Comment showWhenOpeningNetwork="false"><![CDATA[<<Double click to add/modify comment>>]]></Comment>
+    <DecisionCriteria>
+      <Criterion name="---" unit="---" />
+    </DecisionCriteria>
+    <AdditionalProperties />
+    <Variables>
+      <Variable name="Web" type="finiteStates" role="chance">
+        <Coordinates x="690" y="561" />
+        <States>
+          <State name="no" />
+          <State name="yes" />
+        </States>
+      </Variable>
+      <Variable name="Desktop" type="finiteStates" role="chance">
+        <Coordinates x="695" y="149" />
+        <States>
+          <State name="no" />
+          <State name="yes" />
+        </States>
+      </Variable>
+      <Variable name="Portability" type="finiteStates" role="chance">
+        <Coordinates x="1170" y="154" />
+        <States>
+          <State name="no" />
+          <State name="yes" />
+        </States>
+      </Variable>
+      <Variable name="GUI" type="finiteStates" role="chance">
+        <Coordinates x="1168" y="66" />
+        <States>
+          <State name="no" />
+          <State name="yes" />
+        </States>
+      </Variable>
+      <Variable name="Python" type="numeric" role="utility">
+        <Coordinates x="1423" y="451" />
+        <Unit />
+        <Precision>0.01</Precision>
+        <Criterion name="---" />
+      </Variable>
+      <Variable name="Language C#" type="numeric" role="utility">
+        <Coordinates x="1408" y="257" />
+        <Unit />
+        <Precision>0.01</Precision>
+        <Criterion name="---" />
+      </Variable>
+      <Variable name="Java" type="numeric" role="utility">
+        <Coordinates x="1415" y="352" />
+        <Unit />
+        <Precision>0.01</Precision>
+        <Criterion name="---" />
+      </Variable>
+      <Variable name="OOP experience" type="finiteStates" role="chance">
+        <Coordinates x="1169" y="240" />
+        <States>
+          <State name="no" />
+          <State name="yes" />
+        </States>
+      </Variable>
+      <Variable name="Client app" type="finiteStates" role="chance">
+        <Coordinates x="868" y="665" />
+        <States>
+          <State name="no" />
+          <State name="yes" />
+        </States>
+      </Variable>
+      <Variable name="Server app" type="finiteStates" role="chance">
+        <Coordinates x="867" y="460" />
+        <States>
+          <State name="no" />
+          <State name="yes" />
+        </States>
+      </Variable>
+      <Variable name="HTML" type="numeric" role="utility">
+        <Coordinates x="1435" y="840" />
+        <Unit />
+        <Precision>0.01</Precision>
+        <Criterion name="---" />
+      </Variable>
+      <Variable name="CSS" type="numeric" role="utility">
+        <Coordinates x="1430" y="741" />
+        <Unit />
+        <Precision>0.01</Precision>
+        <Criterion name="---" />
+      </Variable>
+      <Variable name="JS" type="numeric" role="utility">
+        <Coordinates x="1432" y="647" />
+        <Unit />
+        <Precision>0.01</Precision>
+        <Criterion name="---" />
+      </Variable>
+      <Variable name="PHP" type="numeric" role="utility">
+        <Coordinates x="1430" y="553" />
+        <Unit />
+        <Precision>0.01</Precision>
+        <Criterion name="---" />
+      </Variable>
+      <Variable name="Easy and fast hosting setup" type="finiteStates" role="chance">
+        <Coordinates x="1161" y="486" />
+        <States>
+          <State name="no" />
+          <State name="yes" />
+        </States>
+      </Variable>
+      <Variable name="Language C" type="numeric" role="utility">
+        <Coordinates x="1428" y="49" />
+        <Unit />
+        <Precision>0.01</Precision>
+        <Criterion name="---" />
+      </Variable>
+      <Variable name="Language C++" type="numeric" role="utility">
+        <Coordinates x="1420" y="153" />
+        <Unit />
+        <Precision>0.01</Precision>
+        <Criterion name="---" />
+      </Variable>
+      <Variable name="Client programming" type="finiteStates" role="chance">
+        <Coordinates x="1166" y="663" />
+        <States>
+          <State name="no" />
+          <State name="yes" />
+        </States>
+      </Variable>
+      <Variable name="Learning one language" type="finiteStates" role="chance">
+        <Coordinates x="1162" y="575" />
+        <States>
+          <State name="no" />
+          <State name="yes" />
+        </States>
+      </Variable>
+      <Variable name="Client design" type="finiteStates" role="chance">
+        <Coordinates x="1143" y="853" />
+        <States>
+          <State name="no" />
+          <State name="yes" />
+        </States>
+      </Variable>
+      <Variable name="Easy to learn" type="finiteStates" role="chance">
+        <Coordinates x="1159" y="311" />
+        <States>
+          <State name="no" />
+          <State name="yes" />
+        </States>
+      </Variable>
+    </Variables>
+    <Links>
+      <Link directed="true">
+        <Variable name="Web" />
+        <Variable name="Client app" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Web" />
+        <Variable name="Server app" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Desktop" />
+        <Variable name="Portability" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Desktop" />
+        <Variable name="GUI" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Portability" />
+        <Variable name="Language C#" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Portability" />
+        <Variable name="Python" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Portability" />
+        <Variable name="Java" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Portability" />
+        <Variable name="Language C++" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Portability" />
+        <Variable name="Language C" />
+      </Link>
+      <Link directed="true">
+        <Variable name="GUI" />
+        <Variable name="Language C#" />
+      </Link>
+      <Link directed="true">
+        <Variable name="GUI" />
+        <Variable name="Java" />
+      </Link>
+      <Link directed="true">
+        <Variable name="GUI" />
+        <Variable name="Python" />
+      </Link>
+      <Link directed="true">
+        <Variable name="GUI" />
+        <Variable name="Language C" />
+      </Link>
+      <Link directed="true">
+        <Variable name="GUI" />
+        <Variable name="Language C++" />
+      </Link>
+      <Link directed="true">
+        <Variable name="OOP experience" />
+        <Variable name="Language C#" />
+      </Link>
+      <Link directed="true">
+        <Variable name="OOP experience" />
+        <Variable name="Java" />
+      </Link>
+      <Link directed="true">
+        <Variable name="OOP experience" />
+        <Variable name="Python" />
+      </Link>
+      <Link directed="true">
+        <Variable name="OOP experience" />
+        <Variable name="PHP" />
+      </Link>
+      <Link directed="true">
+        <Variable name="OOP experience" />
+        <Variable name="Language C++" />
+      </Link>
+      <Link directed="true">
+        <Variable name="OOP experience" />
+        <Variable name="Language C" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Client app" />
+        <Variable name="HTML" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Client app" />
+        <Variable name="Client design" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Client app" />
+        <Variable name="Client programming" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Server app" />
+        <Variable name="PHP" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Server app" />
+        <Variable name="Easy and fast hosting setup" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Server app" />
+        <Variable name="Learning one language" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Server app" />
+        <Variable name="Python" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Server app" />
+        <Variable name="Java" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Server app" />
+        <Variable name="Language C#" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Easy and fast hosting setup" />
+        <Variable name="Python" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Easy and fast hosting setup" />
+        <Variable name="Java" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Easy and fast hosting setup" />
+        <Variable name="Language C#" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Easy and fast hosting setup" />
+        <Variable name="PHP" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Client programming" />
+        <Variable name="JS" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Client programming" />
+        <Variable name="Learning one language" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Learning one language" />
+        <Variable name="JS" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Client design" />
+        <Variable name="CSS" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Easy to learn" />
+        <Variable name="Language C" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Easy to learn" />
+        <Variable name="Language C++" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Easy to learn" />
+        <Variable name="Language C#" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Easy to learn" />
+        <Variable name="Java" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Easy to learn" />
+        <Variable name="Python" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Easy to learn" />
+        <Variable name="PHP" />
+      </Link>
+      <Link directed="true">
+        <Variable name="Easy to learn" />
+        <Variable name="JS" />
+      </Link>
+    </Links>
+    <Potentials>
+      <Potential type="Uniform" role="conditionalProbability">
+        <Variables>
+          <Variable name="Web" />
+        </Variables>
+      </Potential>
+      <Potential type="Uniform" role="conditionalProbability">
+        <Variables>
+          <Variable name="Desktop" />
+        </Variables>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Portability" />
+          <Variable name="Desktop" />
+        </Variables>
+        <Values>1.0 0.0 0.5 0.5</Values>
+      </Potential>
+      <Potential type="Table" role="joinProbability">
+        <Variables>
+          <Variable name="GUI" />
+          <Variable name="Desktop" />
+        </Variables>
+        <Values>1.0 0.0 0.5 0.5</Values>
+      </Potential>
+      <Potential type="Linear combination" role="utility">
+        <UtilityVariable name="Python" />
+        <Variables>
+          <Variable name="Portability" />
+          <Variable name="GUI" />
+          <Variable name="OOP experience" />
+          <Variable name="Server app" />
+          <Variable name="Easy and fast hosting setup" />
+          <Variable name="Easy to learn" />
+        </Variables>
+        <Coefficients>0.0 5.0 3.0 2.0 3.0 3.0 5.0</Coefficients>
+        <Covariates>
+          <Covariate>Constant</Covariate>
+          <Covariate>Portability</Covariate>
+          <Covariate>GUI</Covariate>
+          <Covariate>OOP experience</Covariate>
+          <Covariate>Server app</Covariate>
+          <Covariate>Easy and fast hosting setup</Covariate>
+          <Covariate>Easy to learn</Covariate>
+        </Covariates>
+      </Potential>
+      <Potential type="Linear combination" role="utility">
+        <UtilityVariable name="Language C#" />
+        <Variables>
+          <Variable name="Portability" />
+          <Variable name="GUI" />
+          <Variable name="OOP experience" />
+          <Variable name="Server app" />
+          <Variable name="Easy and fast hosting setup" />
+          <Variable name="Easy to learn" />
+        </Variables>
+        <Coefficients>0.0 -5.0 5.0 4.0 4.0 -3.0 3.0</Coefficients>
+        <Covariates>
+          <Covariate>Constant</Covariate>
+          <Covariate>Portability</Covariate>
+          <Covariate>GUI</Covariate>
+          <Covariate>OOP experience</Covariate>
+          <Covariate>Server app</Covariate>
+          <Covariate>Easy and fast hosting setup</Covariate>
+          <Covariate>Easy to learn</Covariate>
+        </Covariates>
+      </Potential>
+      <Potential type="Linear combination" role="utility">
+        <UtilityVariable name="Java" />
+        <Variables>
+          <Variable name="Portability" />
+          <Variable name="GUI" />
+          <Variable name="OOP experience" />
+          <Variable name="Server app" />
+          <Variable name="Easy and fast hosting setup" />
+          <Variable name="Easy to learn" />
+        </Variables>
+        <Coefficients>0.0 5.0 4.0 5.0 4.0 2.0 0.0</Coefficients>
+        <Covariates>
+          <Covariate>Constant</Covariate>
+          <Covariate>Portability</Covariate>
+          <Covariate>GUI</Covariate>
+          <Covariate>OOP experience</Covariate>
+          <Covariate>Server app</Covariate>
+          <Covariate>Easy and fast hosting setup</Covariate>
+          <Covariate>Easy to learn</Covariate>
+        </Covariates>
+      </Potential>
+      <Potential type="Uniform" role="conditionalProbability">
+        <Variables>
+          <Variable name="OOP experience" />
+        </Variables>
+      </Potential>
+      <Potential type="Table" role="joinProbability">
+        <Variables>
+          <Variable name="Client app" />
+          <Variable name="Web" />
+        </Variables>
+        <Values>1.0 0.0 0.5 0.5</Values>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Server app" />
+          <Variable name="Web" />
+        </Variables>
+        <Values>1.0 0.0 0.5 0.5</Values>
+      </Potential>
+      <Potential type="Linear combination" role="utility">
+        <UtilityVariable name="HTML" />
+        <Variables>
+          <Variable name="Client app" />
+        </Variables>
+        <Coefficients>0.0 5.0</Coefficients>
+        <Covariates>
+          <Covariate>Constant</Covariate>
+          <Covariate>Client app</Covariate>
+        </Covariates>
+      </Potential>
+      <Potential type="Linear combination" role="utility">
+        <UtilityVariable name="CSS" />
+        <Variables>
+          <Variable name="Client design" />
+        </Variables>
+        <Coefficients>0.0 5.0</Coefficients>
+        <Covariates>
+          <Covariate>Constant</Covariate>
+          <Covariate>Client design</Covariate>
+        </Covariates>
+      </Potential>
+      <Potential type="Linear combination" role="utility">
+        <UtilityVariable name="JS" />
+        <Variables>
+          <Variable name="Client programming" />
+          <Variable name="Learning one language" />
+          <Variable name="Easy to learn" />
+        </Variables>
+        <Coefficients>0.0 5.0 5.0 -2.0</Coefficients>
+        <Covariates>
+          <Covariate>Constant</Covariate>
+          <Covariate>Client programming</Covariate>
+          <Covariate>Learning one language</Covariate>
+          <Covariate>Easy to learn</Covariate>
+        </Covariates>
+      </Potential>
+      <Potential type="Linear combination" role="utility">
+        <UtilityVariable name="PHP" />
+        <Variables>
+          <Variable name="Server app" />
+          <Variable name="OOP experience" />
+          <Variable name="Easy and fast hosting setup" />
+          <Variable name="Easy to learn" />
+        </Variables>
+        <Coefficients>0.0 4.0 4.0 0.0 4.0</Coefficients>
+        <Covariates>
+          <Covariate>Constant</Covariate>
+          <Covariate>Server app</Covariate>
+          <Covariate>OOP experience</Covariate>
+          <Covariate>Easy and fast hosting setup</Covariate>
+          <Covariate>Easy to learn</Covariate>
+        </Covariates>
+      </Potential>
+      <Potential type="Table" role="joinProbability">
+        <Variables>
+          <Variable name="Easy and fast hosting setup" />
+          <Variable name="Server app" />
+        </Variables>
+        <Values>1.0 0.0 0.5 0.5</Values>
+      </Potential>
+      <Potential type="Linear combination" role="utility">
+        <UtilityVariable name="Language C" />
+        <Variables>
+          <Variable name="GUI" />
+          <Variable name="Portability" />
+          <Variable name="OOP experience" />
+          <Variable name="Easy to learn" />
+        </Variables>
+        <Coefficients>0.0 -5.0 5.0 -5.0 -5.0</Coefficients>
+        <Covariates>
+          <Covariate>Constant</Covariate>
+          <Covariate>GUI</Covariate>
+          <Covariate>Portability</Covariate>
+          <Covariate>OOP experience</Covariate>
+          <Covariate>Easy to learn</Covariate>
+        </Covariates>
+      </Potential>
+      <Potential type="Linear combination" role="utility">
+        <UtilityVariable name="Language C++" />
+        <Variables>
+          <Variable name="GUI" />
+          <Variable name="Portability" />
+          <Variable name="OOP experience" />
+          <Variable name="Easy to learn" />
+        </Variables>
+        <Coefficients>0.0 4.0 5.0 5.0 -4.0</Coefficients>
+        <Covariates>
+          <Covariate>Constant</Covariate>
+          <Covariate>GUI</Covariate>
+          <Covariate>Portability</Covariate>
+          <Covariate>OOP experience</Covariate>
+          <Covariate>Easy to learn</Covariate>
+        </Covariates>
+      </Potential>
+      <Potential type="Table" role="conditionalProbability">
+        <Variables>
+          <Variable name="Client programming" />
+          <Variable name="Client app" />
+        </Variables>
+        <Values>1.0 0.0 0.5 0.5</Values>
+      </Potential>
+      <Potential type="Table" role="joinProbability">
+        <Variables>
+          <Variable name="Learning one language" />
+          <Variable name="Client programming" />
+          <Variable name="Server app" />
+        </Variables>
+        <Values>1.0 0.0 0.5 0.5 0.5 0.5 0.25 0.75</Values>
+      </Potential>
+      <Potential type="Table" role="joinProbability">
+        <Variables>
+          <Variable name="Client design" />
+          <Variable name="Client app" />
+        </Variables>
+        <Values>1.0 0.0 0.5 0.5</Values>
+      </Potential>
+      <Potential type="Table" role="joinProbability">
+        <Variables>
+          <Variable name="Easy to learn" />
+        </Variables>
+        <Values>0.5 0.5</Values>
+      </Potential>
+    </Potentials>
+  </ProbNet>
+  <InferenceOptions>
+    <MulticriteriaOptions>
+      <SelectedAnalysisType>UNICRITERION</SelectedAnalysisType>
+      <Unicriterion>
+        <Scales>
+          <Scale Criterion="---" Value="1.0" />
+        </Scales>
+      </Unicriterion>
+      <CostEffectiveness>
+        <Scales>
+          <Scale Criterion="---" Value="1.0" />
+        </Scales>
+        <CE_Criteria>
+          <CE_Criterion Criterion="---" Value="Cost" />
+        </CE_Criteria>
+      </CostEffectiveness>
+    </MulticriteriaOptions>
+  </InferenceOptions>
+  <Evidence>
+    <EvidenceCase />
+    <EvidenceCase>
+      <Finding variable="Desktop" state="yes" />
+      <Finding variable="OOP experience" state="yes" />
+      <Finding variable="Easy to learn" state="yes" />
+      <Finding variable="GUI" state="yes" />
+    </EvidenceCase>
+  </Evidence>
+</ProbModelXML>
